@@ -4,8 +4,7 @@
 def reversing(string):
   return string[::-1]
 
->>> reversing('denis')
-sined
+
 
 
 
