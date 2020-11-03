@@ -3,6 +3,10 @@
 ## Reversing string:
 def reversing(string):
   return string[::-1]
+ 
+ 
+ 
+ Hello
 
 
 
