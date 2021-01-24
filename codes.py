@@ -33,6 +33,16 @@ def sorter(array):
                 array[j], array[j + 1] = array[j + 1], array[j]
     return array
 
+"""
+This method is responsible to identify if array is either even or odd which then is going to return
+median value of the array
+"""
+def new_median(array):
+    if len(array) % 2 == 0:
+        return (array[int(len(array) / 2)] + array[int(len(array) / 2) - 1]) / 2
+    else:
+        return array[int(len(array) / 2)] 
+
 
 """
 This method creates new strings withough writing them. It automatically takes in values and
