@@ -56,3 +56,16 @@ for x in range(0,9):
 print string0
 print string1
 print string2
+
+
+"""
+Building your own range function that goes from start to stop using the step
+"""
+
+def ranger(start, stop, step):
+    if start >= stop:
+        return
+    else:
+        print (start)
+        ranger(start + step, stop, step)
+print (ranger(0, 10, 1))
