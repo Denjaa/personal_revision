@@ -69,3 +69,23 @@ def ranger(start, stop, step):
         print (start)
         ranger(start + step, stop, step)
 print (ranger(0, 10, 1))
+
+
+"""
+Finding the max value in the list
+"""
+items = [6, 10, 4012, 154, 200, 87, 23, 300, 1]
+
+def find_max(items):
+    if len(items) == 1:
+        return items[0]
+    
+    op1 = items[0]
+    op2 = find_max(items[1:])
+    
+    if op1 > op2:
+        return op1
+    else:
+        return op2
+
+print (find_max(items))
